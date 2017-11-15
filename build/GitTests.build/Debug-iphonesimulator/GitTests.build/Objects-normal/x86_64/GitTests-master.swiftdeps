@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "56ff7aa4a40e2b5dc21c1931b952872b"
+build_time: [1510721220, 923406000]
+inputs:
+  "/Users/e165738/,p/,IDE/Xcode/iOS/GitTests/GitTests/ViewController.swift": [1510721208, 0]
+  "/Users/e165738/,p/,IDE/Xcode/iOS/GitTests/GitTests/AppDelegate.swift": [1510721208, 0]
