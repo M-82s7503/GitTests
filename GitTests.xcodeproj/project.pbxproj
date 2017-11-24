@@ -12,6 +12,7 @@
 		AB18ADFA1FBBFE380001CBFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADF81FBBFE380001CBFF /* Main.storyboard */; };
 		AB18ADFC1FBBFE380001CBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADFB1FBBFE380001CBFF /* Assets.xcassets */; };
 		AB18ADFF1FBBFE380001CBFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADFD1FBBFE380001CBFF /* LaunchScreen.storyboard */; };
+		ABED24991FC8718200A16C34 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = ABED24981FC8718200A16C34 /* test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		AB18ADFB1FBBFE380001CBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB18ADFE1FBBFE380001CBFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB18AE001FBBFE380001CBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABED24971FC8718100A16C34 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		ABED24981FC8718200A16C34 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 		AB18ADF31FBBFE380001CBFF /* GitTests */ = {
 			isa = PBXGroup;
 			children = (
+				ABED24961FC8714700A16C34 /* branchテスト用フォルダ */,
 				AB18ADF41FBBFE380001CBFF /* AppDelegate.swift */,
 				AB18ADF61FBBFE380001CBFF /* ViewController.swift */,
 				AB18ADF81FBBFE380001CBFF /* Main.storyboard */,
@@ -62,6 +66,16 @@
 				AB18AE001FBBFE380001CBFF /* Info.plist */,
 			);
 			path = GitTests;
+			sourceTree = "<group>";
+		};
+		ABED24961FC8714700A16C34 /* branchテスト用フォルダ */ = {
+			isa = PBXGroup;
+			children = (
+				ABED24971FC8718100A16C34 /* test.h */,
+				ABED24981FC8718200A16C34 /* test.c */,
+			);
+			name = "branchテスト用フォルダ";
+			path = "branchテスト用フォルダ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					AB18ADF01FBBFE380001CBFF = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABED24991FC8718200A16C34 /* test.c in Sources */,
 				AB18ADF71FBBFE380001CBFF /* ViewController.swift in Sources */,
 				AB18ADF51FBBFE380001CBFF /* AppDelegate.swift in Sources */,
 			);
@@ -274,11 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cat-s-eye.ie.ryukyu.GitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
