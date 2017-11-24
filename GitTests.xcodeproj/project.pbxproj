@@ -13,6 +13,7 @@
 		AB18ADFC1FBBFE380001CBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADFB1FBBFE380001CBFF /* Assets.xcassets */; };
 		AB18ADFF1FBBFE380001CBFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADFD1FBBFE380001CBFF /* LaunchScreen.storyboard */; };
 		ABED24991FC8718200A16C34 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = ABED24981FC8718200A16C34 /* test.c */; };
+		ABED249D1FC873EA00A16C34 /* conflictTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABED249B1FC873EA00A16C34 /* conflictTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		AB18AE001FBBFE380001CBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABED24971FC8718100A16C34 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		ABED24981FC8718200A16C34 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		ABED249B1FC873EA00A16C34 /* conflictTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = conflictTest.cpp; sourceTree = "<group>"; };
+		ABED249C1FC873EA00A16C34 /* conflictTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = conflictTest.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		AB18ADF31FBBFE380001CBFF /* GitTests */ = {
 			isa = PBXGroup;
 			children = (
+				ABED249A1FC873BD00A16C34 /* conflictのテスト */,
 				ABED24961FC8714700A16C34 /* branchテスト用フォルダ */,
 				AB18ADF41FBBFE380001CBFF /* AppDelegate.swift */,
 				AB18ADF61FBBFE380001CBFF /* ViewController.swift */,
@@ -76,6 +80,15 @@
 			);
 			name = "branchテスト用フォルダ";
 			path = "branchテスト用フォルダ";
+			sourceTree = "<group>";
+		};
+		ABED249A1FC873BD00A16C34 /* conflictのテスト */ = {
+			isa = PBXGroup;
+			children = (
+				ABED249B1FC873EA00A16C34 /* conflictTest.cpp */,
+				ABED249C1FC873EA00A16C34 /* conflictTest.hpp */,
+			);
+			path = "conflictのテスト";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 				ABED24991FC8718200A16C34 /* test.c in Sources */,
 				AB18ADF71FBBFE380001CBFF /* ViewController.swift in Sources */,
 				AB18ADF51FBBFE380001CBFF /* AppDelegate.swift in Sources */,
+				ABED249D1FC873EA00A16C34 /* conflictTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
