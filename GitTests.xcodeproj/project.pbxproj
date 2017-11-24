@@ -54,6 +54,7 @@
 		AB18ADF31FBBFE380001CBFF /* GitTests */ = {
 			isa = PBXGroup;
 			children = (
+				ABED249E1FC875BE00A16C34 /* マージテスト用 */,
 				AB18ADF41FBBFE380001CBFF /* AppDelegate.swift */,
 				AB18ADF61FBBFE380001CBFF /* ViewController.swift */,
 				AB18ADF81FBBFE380001CBFF /* Main.storyboard */,
@@ -62,6 +63,14 @@
 				AB18AE001FBBFE380001CBFF /* Info.plist */,
 			);
 			path = GitTests;
+			sourceTree = "<group>";
+		};
+		ABED249E1FC875BE00A16C34 /* マージテスト用 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "マージテスト用";
+			path = "マージテスト用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
