@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126F152526BCC26A6CABB924 /* pullreqTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 126F1E4BA41AC74A7BA3224A /* pullreqTest.mm */; };
 		AB18ADF51FBBFE380001CBFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18ADF41FBBFE380001CBFF /* AppDelegate.swift */; };
 		AB18ADF71FBBFE380001CBFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18ADF61FBBFE380001CBFF /* ViewController.swift */; };
 		AB18ADFA1FBBFE380001CBFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADF81FBBFE380001CBFF /* Main.storyboard */; };
 		AB18ADFC1FBBFE380001CBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADFB1FBBFE380001CBFF /* Assets.xcassets */; };
 		AB18ADFF1FBBFE380001CBFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB18ADFD1FBBFE380001CBFF /* LaunchScreen.storyboard */; };
-		ABED24991FC8718200A16C34 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = ABED24981FC8718200A16C34 /* test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126F16F84AE99317D3B0EE9B /* pullreqTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pullreqTest.h; sourceTree = SOURCE_ROOT; };
+		126F1E4BA41AC74A7BA3224A /* pullreqTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pullreqTest.mm; sourceTree = SOURCE_ROOT; };
 		AB18ADF11FBBFE380001CBFF /* GitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB18ADF41FBBFE380001CBFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB18ADF61FBBFE380001CBFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,8 +25,6 @@
 		AB18ADFB1FBBFE380001CBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB18ADFE1FBBFE380001CBFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB18AE001FBBFE380001CBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABED24971FC8718100A16C34 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		ABED24981FC8718200A16C34 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		AB18ADF31FBBFE380001CBFF /* GitTests */ = {
 			isa = PBXGroup;
 			children = (
-				ABED24961FC8714700A16C34 /* branchテスト用フォルダ */,
+				ABED249E1FC875BE00A16C34 /* マージテスト用 */,
 				AB18ADF41FBBFE380001CBFF /* AppDelegate.swift */,
 				AB18ADF61FBBFE380001CBFF /* ViewController.swift */,
 				AB18ADF81FBBFE380001CBFF /* Main.storyboard */,
@@ -68,14 +68,14 @@
 			path = GitTests;
 			sourceTree = "<group>";
 		};
-		ABED24961FC8714700A16C34 /* branchテスト用フォルダ */ = {
+		ABED249E1FC875BE00A16C34 /* マージテスト用 */ = {
 			isa = PBXGroup;
 			children = (
-				ABED24971FC8718100A16C34 /* test.h */,
-				ABED24981FC8718200A16C34 /* test.c */,
+				126F1E4BA41AC74A7BA3224A /* pullreqTest.mm */,
+				126F16F84AE99317D3B0EE9B /* pullreqTest.h */,
 			);
-			name = "branchテスト用フォルダ";
-			path = "branchテスト用フォルダ";
+			name = "マージテスト用";
+			path = "マージテスト用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +110,6 @@
 				TargetAttributes = {
 					AB18ADF01FBBFE380001CBFF = {
 						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABED24991FC8718200A16C34 /* test.c in Sources */,
 				AB18ADF71FBBFE380001CBFF /* ViewController.swift in Sources */,
 				AB18ADF51FBBFE380001CBFF /* AppDelegate.swift in Sources */,
+				126F152526BCC26A6CABB924 /* pullreqTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,13 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cat-s-eye.ie.ryukyu.GitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,7 +303,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
