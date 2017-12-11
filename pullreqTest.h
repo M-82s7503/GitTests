@@ -8,7 +8,7 @@
 
 
 class pullreqTest {
-
+    // pullreq テスト用2
 };
 
 
